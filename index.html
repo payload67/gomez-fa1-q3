@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Welcome to my simple calculator page!</h2>
+<p id="numbers"></p>
+<p id="result"></p>
+<script>
+
+// Step 1: Get two numbers using prompt
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+
+// Step 2: Perform operations
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1*num2;
+let quotient = num1/num2;
+let remainder = num1%2;
+
+// Step 3: Display numbers and results using document.write()
+// Display the numbers
+document.write("Numbers: " + num1 + " and " + num2);
+document.write("<br>");
+
+// Display the sum
+document.write("Sum: " + sum);
+document.write("<br>");
+
+// Display the difference
+document.write("Difference: " + difference);
+document.write("<br>");
+
+// Display the product
+document.write("Product: " + product);
+document.write("<br>");
+
+// Display the quotient
+document.write("quotient: " + quotient);
+document.write("<br>");
+
+// Display the remainder
+document.write("Remainder: " + remainder);
+document.write("<br>");
+
+// Step 4: Display results using innerHTML
+
+// Display the numbers
+document.getElementById("numbers").innerHTML =
+ "Numbers: " + num1 + " and " + num2 + "<br>";
+
+ // Display the results
+document.getElementById("result").innerHTML =
+ "Sum: " + sum + "<br>" +
+ "Difference: " + difference + "<br>" +
+ "Product: " + product + "<br>" +
+ "Quotient: " + quotient + "<br>" +
+ "Remainder: " + remainder + "<br>"
+ ;
+
+</script>
+</body>
+</html>
